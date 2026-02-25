@@ -9,7 +9,7 @@ Sockets Links.
  server .
 4. Send and receive the message using the send function in socket.
 ## PROGRAM
-## SERVER
+## SERVER:
 ~~~
 import socket
 
@@ -32,7 +32,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
                 conn.sendall(data)
                 print(f"Echoed: {data.decode('utf-8')}")
 ~~~
-## CLIENT
+## CLIENT:
 ~~~
  
 import socket
@@ -50,9 +50,9 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client_socket:
     print(f"Received echo: {data.decode('utf-8')}")
 ~~~
 ## OUPUT
-## SERVER
+## SERVER:
 <img width="1031" height="182" alt="Screenshot 2026-02-25 111743" src="https://github.com/user-attachments/assets/15ed008d-4b60-4591-ad81-8c3b118aabc2" />
-## CLIENT
+## CLIENT:
 <img width="1067" height="158" alt="Screenshot 2026-02-25 111811" src="https://github.com/user-attachments/assets/11d5485e-d013-44be-83ed-cfd8a5b9c874" />
 
 
